@@ -31,6 +31,8 @@ app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 app.use('/api', require('./routes'));
 
+
+
 const PORT = process.env.PORT || 5000;
 
 app.get('*', (req, res, next) => {
